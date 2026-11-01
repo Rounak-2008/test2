@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+    background-color: #1e40af;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* Main Container */
+.container {
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 1100px;
+}
+
+/* Headings */
+h2 {
+    margin-bottom: 20px;
+    color: #1e40af;
+}
+
+/* Dashboard Cards */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 18px;
+}
+
+/* Course List */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+/* Buttons */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
